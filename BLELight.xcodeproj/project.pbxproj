@@ -1,0 +1,975 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB88F6E82704B5EF00E1072A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB88F6E72704B5EF00E1072A /* AppDelegate.m */; };
+		BB88F6EB2704B5EF00E1072A /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB88F6EA2704B5EF00E1072A /* SceneDelegate.m */; };
+		BB88F6F12704B5EF00E1072A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB88F6EF2704B5EF00E1072A /* Main.storyboard */; };
+		BB88F6F32704B5F100E1072A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB88F6F22704B5F100E1072A /* Assets.xcassets */; };
+		BB88F6F62704B5F100E1072A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB88F6F42704B5F100E1072A /* LaunchScreen.storyboard */; };
+		BB88F6F92704B5F100E1072A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BB88F6F82704B5F100E1072A /* main.m */; };
+		BB88F7032704B5F100E1072A /* BLELightTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BB88F7022704B5F100E1072A /* BLELightTests.m */; };
+		BB88F70E2704B5F100E1072A /* BLELightUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BB88F70D2704B5F100E1072A /* BLELightUITests.m */; };
+		BB88F7202704D35800E1072A /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB88F71F2704D35800E1072A /* SearchViewController.m */; };
+		BB88F7262704D44E00E1072A /* LightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB88F7252704D44E00E1072A /* LightViewController.m */; };
+		BB88F7292704E2DB00E1072A /* SearchViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB88F7282704E2DB00E1072A /* SearchViewCell.m */; };
+		BB88F73B2704FAF100E1072A /* colorPickerKnob.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F72D2704FAF100E1072A /* colorPickerKnob.png */; };
+		BB88F73C2704FAF100E1072A /* HSV.c in Sources */ = {isa = PBXBuildFile; fileRef = BB88F7302704FAF100E1072A /* HSV.c */; };
+		BB88F73D2704FAF100E1072A /* colorPickerKnob@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F7322704FAF100E1072A /* colorPickerKnob@2x.png */; };
+		BB88F73E2704FAF100E1072A /* checkerboard@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F7342704FAF100E1072A /* checkerboard@2x.png */; };
+		BB88F73F2704FAF100E1072A /* KZColorCompareView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB88F7352704FAF100E1072A /* KZColorCompareView.m */; };
+		BB88F7402704FAF100E1072A /* checkerboard.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F7362704FAF100E1072A /* checkerboard.png */; };
+		BB88F7412704FAF100E1072A /* KZColorPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = BB88F7372704FAF100E1072A /* KZColorPicker.m */; };
+		BB88F7422704FAF100E1072A /* UIColor-Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = BB88F7382704FAF100E1072A /* UIColor-Expanded.m */; };
+		BB88F7432704FAF100E1072A /* KZColorPickerHSWheel.m in Sources */ = {isa = PBXBuildFile; fileRef = BB88F73A2704FAF100E1072A /* KZColorPickerHSWheel.m */; };
+		BB88F7582704FB0700E1072A /* ASValuePopUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB88F7472704FB0700E1072A /* ASValuePopUpView.m */; };
+		BB88F7622704FB0700E1072A /* ASValueTrackingSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = BB88F7572704FB0700E1072A /* ASValueTrackingSlider.m */; };
+		BB88F7A82704FF9200E1072A /* btn_list_down.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F7642704FF9200E1072A /* btn_list_down.png */; };
+		BB88F7A92704FF9200E1072A /* btn_list_nor.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F7652704FF9200E1072A /* btn_list_nor.png */; };
+		BB88F7AA2704FF9200E1072A /* btn_next_nor.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F7662704FF9200E1072A /* btn_next_nor.png */; };
+		BB88F7AB2704FF9200E1072A /* btn_off.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F7672704FF9200E1072A /* btn_off.png */; };
+		BB88F7AC2704FF9200E1072A /* btn_state_pause_nor.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F7682704FF9200E1072A /* btn_state_pause_nor.png */; };
+		BB88F7AD2704FF9200E1072A /* btn_setting_nor.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F7692704FF9200E1072A /* btn_setting_nor.png */; };
+		BB88F7AE2704FF9200E1072A /* arrow_close.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F76A2704FF9200E1072A /* arrow_close.png */; };
+		BB88F7AF2704FF9200E1072A /* btn_play_nor.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F76B2704FF9200E1072A /* btn_play_nor.png */; };
+		BB88F7B02704FF9200E1072A /* btn_pause_nor.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F76C2704FF9200E1072A /* btn_pause_nor.png */; };
+		BB88F7B12704FF9200E1072A /* img_sleep.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F76D2704FF9200E1072A /* img_sleep.png */; };
+		BB88F7B22704FF9200E1072A /* btn_loop_random_nor.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F76E2704FF9200E1072A /* btn_loop_random_nor.png */; };
+		BB88F7B32704FF9200E1072A /* btn_next_down.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F76F2704FF9200E1072A /* btn_next_down.png */; };
+		BB88F7B42704FF9200E1072A /* btn_more_nor.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F7702704FF9200E1072A /* btn_more_nor.png */; };
+		BB88F7B52704FF9200E1072A /* btn_state_pause_down.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F7712704FF9200E1072A /* btn_state_pause_down.png */; };
+		BB88F7B62704FF9200E1072A /* btn_play_down.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F7722704FF9200E1072A /* btn_play_down.png */; };
+		BB88F7B72704FF9200E1072A /* btn_state_play_down.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F7732704FF9200E1072A /* btn_state_play_down.png */; };
+		BB88F7B82704FF9200E1072A /* btn_on.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F7742704FF9200E1072A /* btn_on.png */; };
+		BB88F7B92704FF9200E1072A /* ic_brightness_nor.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F7752704FF9200E1072A /* ic_brightness_nor.png */; };
+		BB88F7BA2704FF9200E1072A /* arrow_open.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F7762704FF9200E1072A /* arrow_open.png */; };
+		BB88F7BB2704FF9200E1072A /* btn_loop_random_down.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F7772704FF9200E1072A /* btn_loop_random_down.png */; };
+		BB88F7BC2704FF9200E1072A /* btn_pre_nor.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F7782704FF9200E1072A /* btn_pre_nor.png */; };
+		BB88F7BD2704FF9200E1072A /* btn_remind_down.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F7792704FF9200E1072A /* btn_remind_down.png */; };
+		BB88F7BE2704FF9200E1072A /* title_bg_setting.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F77A2704FF9200E1072A /* title_bg_setting.png */; };
+		BB88F7BF2704FF9200E1072A /* btn_loop_single_down.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F77B2704FF9200E1072A /* btn_loop_single_down.png */; };
+		BB88F7C02704FF9200E1072A /* btn_state_play_nor.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F77C2704FF9200E1072A /* btn_state_play_nor.png */; };
+		BB88F7C12704FF9200E1072A /* btn_loop_all_nor.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F77D2704FF9200E1072A /* btn_loop_all_nor.png */; };
+		BB88F7C22704FF9200E1072A /* line_03.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F77E2704FF9200E1072A /* line_03.png */; };
+		BB88F7C32704FF9200E1072A /* line_02.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F77F2704FF9200E1072A /* line_02.png */; };
+		BB88F7C42704FF9200E1072A /* dot_music.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F7802704FF9200E1072A /* dot_music.png */; };
+		BB88F7C52704FF9200E1072A /* line_01.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F7812704FF9200E1072A /* line_01.png */; };
+		BB88F7C62704FF9200E1072A /* btn_remind_nor.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F7822704FF9200E1072A /* btn_remind_nor.png */; };
+		BB88F7C72704FF9200E1072A /* btn_loop_all_down.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F7832704FF9200E1072A /* btn_loop_all_down.png */; };
+		BB88F7C82704FF9200E1072A /* btn_setting_down.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F7842704FF9200E1072A /* btn_setting_down.png */; };
+		BB88F7C92704FF9200E1072A /* btn_more_down.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F7852704FF9200E1072A /* btn_more_down.png */; };
+		BB88F7CA2704FF9200E1072A /* btn_pre_down.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F7862704FF9200E1072A /* btn_pre_down.png */; };
+		BB88F7CB2704FF9200E1072A /* title_bg_main.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F7872704FF9200E1072A /* title_bg_main.png */; };
+		BB88F7CC2704FF9200E1072A /* btn_loop_single_nor.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F7882704FF9200E1072A /* btn_loop_single_nor.png */; };
+		BB88F7CD2704FF9200E1072A /* btn_pause_down.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F7892704FF9200E1072A /* btn_pause_down.png */; };
+		BB88F7CE2704FF9200E1072A /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F78B2704FF9200E1072A /* icon.png */; };
+		BB88F7CF2704FF9200E1072A /* process_thumb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F78C2704FF9200E1072A /* process_thumb@2x.png */; };
+		BB88F7D02704FF9200E1072A /* Only Girl - Rihanna.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BB88F78D2704FF9200E1072A /* Only Girl - Rihanna.mp3 */; };
+		BB88F7D12704FF9200E1072A /* Icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F78E2704FF9200E1072A /* Icon-120.png */; };
+		BB88F7D22704FF9200E1072A /* RSSI_Meter_1_70@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F78F2704FF9200E1072A /* RSSI_Meter_1_70@2x.png */; };
+		BB88F7D32704FF9200E1072A /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F7902704FF9200E1072A /* Icon-Small.png */; };
+		BB88F7D42704FF9200E1072A /* RSSI_Meter_DOT_70@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F7912704FF9200E1072A /* RSSI_Meter_DOT_70@2x.png */; };
+		BB88F7D52704FF9200E1072A /* player-progress-loading@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F7922704FF9200E1072A /* player-progress-loading@2x.png */; };
+		BB88F7D62704FF9200E1072A /* player-progress-point-h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F7932704FF9200E1072A /* player-progress-point-h@2x.png */; };
+		BB88F7D72704FF9200E1072A /* RSSI_Meter_1_70.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F7942704FF9200E1072A /* RSSI_Meter_1_70.png */; };
+		BB88F7D82704FF9200E1072A /* lampControlTI@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F7952704FF9200E1072A /* lampControlTI@2x.png */; };
+		BB88F7D92704FF9200E1072A /* beLightColorPicker@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F7962704FF9200E1072A /* beLightColorPicker@2x.png */; };
+		BB88F7DA2704FF9200E1072A /* RSSI_Meter_3_70.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F7972704FF9200E1072A /* RSSI_Meter_3_70.png */; };
+		BB88F7DB2704FF9200E1072A /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F7982704FF9200E1072A /* Icon-72.png */; };
+		BB88F7DC2704FF9200E1072A /* RSSI_Meter_DOT_70.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F7992704FF9200E1072A /* RSSI_Meter_DOT_70.png */; };
+		BB88F7DD2704FF9200E1072A /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F79A2704FF9200E1072A /* icon@2x.png */; };
+		BB88F7DE2704FF9200E1072A /* rccarknob.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F79B2704FF9200E1072A /* rccarknob.png */; };
+		BB88F7DF2704FF9200E1072A /* Icon-80.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F79C2704FF9200E1072A /* Icon-80.png */; };
+		BB88F7E02704FF9200E1072A /* player-progress@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F79D2704FF9200E1072A /* player-progress@2x.png */; };
+		BB88F7E12704FF9200E1072A /* RSSI_Meter_3_70@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F79E2704FF9200E1072A /* RSSI_Meter_3_70@2x.png */; };
+		BB88F7E22704FF9200E1072A /* rccarknobSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F79F2704FF9200E1072A /* rccarknobSmall.png */; };
+		BB88F7E32704FF9200E1072A /* player-progress-h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F7A02704FF9200E1072A /* player-progress-h@2x.png */; };
+		BB88F7E42704FF9200E1072A /* player-progress-point@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F7A12704FF9200E1072A /* player-progress-point@2x.png */; };
+		BB88F7E52704FF9200E1072A /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F7A22704FF9200E1072A /* Icon-Small-50.png */; };
+		BB88F7E62704FF9200E1072A /* pickerColorWheel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F7A32704FF9200E1072A /* pickerColorWheel@2x.png */; };
+		BB88F7E72704FF9200E1072A /* lamp@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F7A42704FF9200E1072A /* lamp@2x.png */; };
+		BB88F7E82704FF9200E1072A /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F7A52704FF9200E1072A /* Icon-Small@2x.png */; };
+		BB88F7E92704FF9200E1072A /* RSSI_Meter_2_70@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F7A62704FF9200E1072A /* RSSI_Meter_2_70@2x.png */; };
+		BB88F7EA2704FF9200E1072A /* RSSI_Meter_2_70.png in Resources */ = {isa = PBXBuildFile; fileRef = BB88F7A72704FF9200E1072A /* RSSI_Meter_2_70.png */; };
+		BB88F7F12706A62E00E1072A /* YXCMusicView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB88F7EE2706A62E00E1072A /* YXCMusicView.m */; };
+		BB88F7F22706A62E00E1072A /* YXCMusicView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB88F7F02706A62E00E1072A /* YXCMusicView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB88F6FF2704B5F100E1072A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB88F6DB2704B5EF00E1072A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB88F6E22704B5EF00E1072A;
+			remoteInfo = BLELight;
+		};
+		BB88F70A2704B5F100E1072A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB88F6DB2704B5EF00E1072A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB88F6E22704B5EF00E1072A;
+			remoteInfo = BLELight;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BB88F6E32704B5EF00E1072A /* BLELight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLELight.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB88F6E62704B5EF00E1072A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BB88F6E72704B5EF00E1072A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BB88F6E92704B5EF00E1072A /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		BB88F6EA2704B5EF00E1072A /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		BB88F6F02704B5EF00E1072A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BB88F6F22704B5F100E1072A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB88F6F52704B5F100E1072A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BB88F6F72704B5F100E1072A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB88F6F82704B5F100E1072A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BB88F6FE2704B5F100E1072A /* BLELightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLELightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB88F7022704B5F100E1072A /* BLELightTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLELightTests.m; sourceTree = "<group>"; };
+		BB88F7042704B5F100E1072A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB88F7092704B5F100E1072A /* BLELightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLELightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB88F70D2704B5F100E1072A /* BLELightUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLELightUITests.m; sourceTree = "<group>"; };
+		BB88F70F2704B5F100E1072A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB88F71E2704D35800E1072A /* SearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		BB88F71F2704D35800E1072A /* SearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		BB88F7242704D44E00E1072A /* LightViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LightViewController.h; sourceTree = "<group>"; };
+		BB88F7252704D44E00E1072A /* LightViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LightViewController.m; sourceTree = "<group>"; };
+		BB88F7272704E2DB00E1072A /* SearchViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchViewCell.h; sourceTree = "<group>"; };
+		BB88F7282704E2DB00E1072A /* SearchViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchViewCell.m; sourceTree = "<group>"; };
+		BB88F72D2704FAF100E1072A /* colorPickerKnob.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colorPickerKnob.png; sourceTree = "<group>"; };
+		BB88F72E2704FAF100E1072A /* KZColorPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZColorPicker.h; sourceTree = "<group>"; };
+		BB88F72F2704FAF100E1072A /* KZColorCompareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZColorCompareView.h; sourceTree = "<group>"; };
+		BB88F7302704FAF100E1072A /* HSV.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = HSV.c; sourceTree = "<group>"; };
+		BB88F7312704FAF100E1072A /* UIColor-Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor-Expanded.h"; sourceTree = "<group>"; };
+		BB88F7322704FAF100E1072A /* colorPickerKnob@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "colorPickerKnob@2x.png"; sourceTree = "<group>"; };
+		BB88F7332704FAF100E1072A /* KZColorPickerHSWheel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZColorPickerHSWheel.h; sourceTree = "<group>"; };
+		BB88F7342704FAF100E1072A /* checkerboard@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkerboard@2x.png"; sourceTree = "<group>"; };
+		BB88F7352704FAF100E1072A /* KZColorCompareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZColorCompareView.m; sourceTree = "<group>"; };
+		BB88F7362704FAF100E1072A /* checkerboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkerboard.png; sourceTree = "<group>"; };
+		BB88F7372704FAF100E1072A /* KZColorPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZColorPicker.m; sourceTree = "<group>"; };
+		BB88F7382704FAF100E1072A /* UIColor-Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor-Expanded.m"; sourceTree = "<group>"; };
+		BB88F7392704FAF100E1072A /* HSV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSV.h; sourceTree = "<group>"; };
+		BB88F73A2704FAF100E1072A /* KZColorPickerHSWheel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZColorPickerHSWheel.m; sourceTree = "<group>"; };
+		BB88F7452704FB0700E1072A /* ASValuePopUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASValuePopUpView.h; sourceTree = "<group>"; };
+		BB88F7462704FB0700E1072A /* ASValueTrackingSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASValueTrackingSlider.h; sourceTree = "<group>"; };
+		BB88F7472704FB0700E1072A /* ASValuePopUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASValuePopUpView.m; sourceTree = "<group>"; };
+		BB88F7572704FB0700E1072A /* ASValueTrackingSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASValueTrackingSlider.m; sourceTree = "<group>"; };
+		BB88F7642704FF9200E1072A /* btn_list_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_list_down.png; sourceTree = "<group>"; };
+		BB88F7652704FF9200E1072A /* btn_list_nor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_list_nor.png; sourceTree = "<group>"; };
+		BB88F7662704FF9200E1072A /* btn_next_nor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_next_nor.png; sourceTree = "<group>"; };
+		BB88F7672704FF9200E1072A /* btn_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_off.png; sourceTree = "<group>"; };
+		BB88F7682704FF9200E1072A /* btn_state_pause_nor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_state_pause_nor.png; sourceTree = "<group>"; };
+		BB88F7692704FF9200E1072A /* btn_setting_nor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_setting_nor.png; sourceTree = "<group>"; };
+		BB88F76A2704FF9200E1072A /* arrow_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_close.png; sourceTree = "<group>"; };
+		BB88F76B2704FF9200E1072A /* btn_play_nor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_play_nor.png; sourceTree = "<group>"; };
+		BB88F76C2704FF9200E1072A /* btn_pause_nor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_pause_nor.png; sourceTree = "<group>"; };
+		BB88F76D2704FF9200E1072A /* img_sleep.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_sleep.png; sourceTree = "<group>"; };
+		BB88F76E2704FF9200E1072A /* btn_loop_random_nor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_loop_random_nor.png; sourceTree = "<group>"; };
+		BB88F76F2704FF9200E1072A /* btn_next_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_next_down.png; sourceTree = "<group>"; };
+		BB88F7702704FF9200E1072A /* btn_more_nor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_more_nor.png; sourceTree = "<group>"; };
+		BB88F7712704FF9200E1072A /* btn_state_pause_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_state_pause_down.png; sourceTree = "<group>"; };
+		BB88F7722704FF9200E1072A /* btn_play_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_play_down.png; sourceTree = "<group>"; };
+		BB88F7732704FF9200E1072A /* btn_state_play_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_state_play_down.png; sourceTree = "<group>"; };
+		BB88F7742704FF9200E1072A /* btn_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_on.png; sourceTree = "<group>"; };
+		BB88F7752704FF9200E1072A /* ic_brightness_nor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_brightness_nor.png; sourceTree = "<group>"; };
+		BB88F7762704FF9200E1072A /* arrow_open.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_open.png; sourceTree = "<group>"; };
+		BB88F7772704FF9200E1072A /* btn_loop_random_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_loop_random_down.png; sourceTree = "<group>"; };
+		BB88F7782704FF9200E1072A /* btn_pre_nor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_pre_nor.png; sourceTree = "<group>"; };
+		BB88F7792704FF9200E1072A /* btn_remind_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_remind_down.png; sourceTree = "<group>"; };
+		BB88F77A2704FF9200E1072A /* title_bg_setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title_bg_setting.png; sourceTree = "<group>"; };
+		BB88F77B2704FF9200E1072A /* btn_loop_single_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_loop_single_down.png; sourceTree = "<group>"; };
+		BB88F77C2704FF9200E1072A /* btn_state_play_nor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_state_play_nor.png; sourceTree = "<group>"; };
+		BB88F77D2704FF9200E1072A /* btn_loop_all_nor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_loop_all_nor.png; sourceTree = "<group>"; };
+		BB88F77E2704FF9200E1072A /* line_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line_03.png; sourceTree = "<group>"; };
+		BB88F77F2704FF9200E1072A /* line_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line_02.png; sourceTree = "<group>"; };
+		BB88F7802704FF9200E1072A /* dot_music.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dot_music.png; sourceTree = "<group>"; };
+		BB88F7812704FF9200E1072A /* line_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line_01.png; sourceTree = "<group>"; };
+		BB88F7822704FF9200E1072A /* btn_remind_nor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_remind_nor.png; sourceTree = "<group>"; };
+		BB88F7832704FF9200E1072A /* btn_loop_all_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_loop_all_down.png; sourceTree = "<group>"; };
+		BB88F7842704FF9200E1072A /* btn_setting_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_setting_down.png; sourceTree = "<group>"; };
+		BB88F7852704FF9200E1072A /* btn_more_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_more_down.png; sourceTree = "<group>"; };
+		BB88F7862704FF9200E1072A /* btn_pre_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_pre_down.png; sourceTree = "<group>"; };
+		BB88F7872704FF9200E1072A /* title_bg_main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title_bg_main.png; sourceTree = "<group>"; };
+		BB88F7882704FF9200E1072A /* btn_loop_single_nor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_loop_single_nor.png; sourceTree = "<group>"; };
+		BB88F7892704FF9200E1072A /* btn_pause_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_pause_down.png; sourceTree = "<group>"; };
+		BB88F78B2704FF9200E1072A /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		BB88F78C2704FF9200E1072A /* process_thumb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "process_thumb@2x.png"; sourceTree = "<group>"; };
+		BB88F78D2704FF9200E1072A /* Only Girl - Rihanna.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Only Girl - Rihanna.mp3"; sourceTree = "<group>"; };
+		BB88F78E2704FF9200E1072A /* Icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-120.png"; sourceTree = "<group>"; };
+		BB88F78F2704FF9200E1072A /* RSSI_Meter_1_70@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RSSI_Meter_1_70@2x.png"; sourceTree = "<group>"; };
+		BB88F7902704FF9200E1072A /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		BB88F7912704FF9200E1072A /* RSSI_Meter_DOT_70@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RSSI_Meter_DOT_70@2x.png"; sourceTree = "<group>"; };
+		BB88F7922704FF9200E1072A /* player-progress-loading@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player-progress-loading@2x.png"; sourceTree = "<group>"; };
+		BB88F7932704FF9200E1072A /* player-progress-point-h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player-progress-point-h@2x.png"; sourceTree = "<group>"; };
+		BB88F7942704FF9200E1072A /* RSSI_Meter_1_70.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RSSI_Meter_1_70.png; sourceTree = "<group>"; };
+		BB88F7952704FF9200E1072A /* lampControlTI@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lampControlTI@2x.png"; sourceTree = "<group>"; };
+		BB88F7962704FF9200E1072A /* beLightColorPicker@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "beLightColorPicker@2x.png"; sourceTree = "<group>"; };
+		BB88F7972704FF9200E1072A /* RSSI_Meter_3_70.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RSSI_Meter_3_70.png; sourceTree = "<group>"; };
+		BB88F7982704FF9200E1072A /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		BB88F7992704FF9200E1072A /* RSSI_Meter_DOT_70.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RSSI_Meter_DOT_70.png; sourceTree = "<group>"; };
+		BB88F79A2704FF9200E1072A /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		BB88F79B2704FF9200E1072A /* rccarknob.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rccarknob.png; sourceTree = "<group>"; };
+		BB88F79C2704FF9200E1072A /* Icon-80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-80.png"; sourceTree = "<group>"; };
+		BB88F79D2704FF9200E1072A /* player-progress@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player-progress@2x.png"; sourceTree = "<group>"; };
+		BB88F79E2704FF9200E1072A /* RSSI_Meter_3_70@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RSSI_Meter_3_70@2x.png"; sourceTree = "<group>"; };
+		BB88F79F2704FF9200E1072A /* rccarknobSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rccarknobSmall.png; sourceTree = "<group>"; };
+		BB88F7A02704FF9200E1072A /* player-progress-h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player-progress-h@2x.png"; sourceTree = "<group>"; };
+		BB88F7A12704FF9200E1072A /* player-progress-point@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player-progress-point@2x.png"; sourceTree = "<group>"; };
+		BB88F7A22704FF9200E1072A /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		BB88F7A32704FF9200E1072A /* pickerColorWheel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pickerColorWheel@2x.png"; sourceTree = "<group>"; };
+		BB88F7A42704FF9200E1072A /* lamp@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lamp@2x.png"; sourceTree = "<group>"; };
+		BB88F7A52704FF9200E1072A /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		BB88F7A62704FF9200E1072A /* RSSI_Meter_2_70@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RSSI_Meter_2_70@2x.png"; sourceTree = "<group>"; };
+		BB88F7A72704FF9200E1072A /* RSSI_Meter_2_70.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RSSI_Meter_2_70.png; sourceTree = "<group>"; };
+		BB88F7EB2705096700E1072A /* LightCondifg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LightCondifg.h; sourceTree = "<group>"; };
+		BB88F7EE2706A62E00E1072A /* YXCMusicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXCMusicView.m; sourceTree = "<group>"; };
+		BB88F7EF2706A62E00E1072A /* YXCMusicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXCMusicView.h; sourceTree = "<group>"; };
+		BB88F7F02706A62E00E1072A /* YXCMusicView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YXCMusicView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB88F6E02704B5EF00E1072A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB88F6FB2704B5F100E1072A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB88F7062704B5F100E1072A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB88F6DA2704B5EF00E1072A = {
+			isa = PBXGroup;
+			children = (
+				BB88F6E52704B5EF00E1072A /* BLELight */,
+				BB88F7012704B5F100E1072A /* BLELightTests */,
+				BB88F70C2704B5F100E1072A /* BLELightUITests */,
+				BB88F6E42704B5EF00E1072A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB88F6E42704B5EF00E1072A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB88F6E32704B5EF00E1072A /* BLELight.app */,
+				BB88F6FE2704B5F100E1072A /* BLELightTests.xctest */,
+				BB88F7092704B5F100E1072A /* BLELightUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB88F6E52704B5EF00E1072A /* BLELight */ = {
+			isa = PBXGroup;
+			children = (
+				BB88F7632704FF9200E1072A /* Music */,
+				BB88F78A2704FF9200E1072A /* 图片素材 */,
+				BB88F72C2704FAF100E1072A /* KZColorPicker */,
+				BB88F7442704FB0700E1072A /* ASValueTrackingSlider */,
+				BB88F6E62704B5EF00E1072A /* AppDelegate.h */,
+				BB88F6E72704B5EF00E1072A /* AppDelegate.m */,
+				BB88F6E92704B5EF00E1072A /* SceneDelegate.h */,
+				BB88F6EA2704B5EF00E1072A /* SceneDelegate.m */,
+				BB88F7272704E2DB00E1072A /* SearchViewCell.h */,
+				BB88F7282704E2DB00E1072A /* SearchViewCell.m */,
+				BB88F71E2704D35800E1072A /* SearchViewController.h */,
+				BB88F71F2704D35800E1072A /* SearchViewController.m */,
+				BB88F7242704D44E00E1072A /* LightViewController.h */,
+				BB88F7252704D44E00E1072A /* LightViewController.m */,
+				BB88F7EB2705096700E1072A /* LightCondifg.h */,
+				BB88F6EF2704B5EF00E1072A /* Main.storyboard */,
+				BB88F6F22704B5F100E1072A /* Assets.xcassets */,
+				BB88F6F42704B5F100E1072A /* LaunchScreen.storyboard */,
+				BB88F6F72704B5F100E1072A /* Info.plist */,
+				BB88F6F82704B5F100E1072A /* main.m */,
+			);
+			path = BLELight;
+			sourceTree = "<group>";
+		};
+		BB88F7012704B5F100E1072A /* BLELightTests */ = {
+			isa = PBXGroup;
+			children = (
+				BB88F7022704B5F100E1072A /* BLELightTests.m */,
+				BB88F7042704B5F100E1072A /* Info.plist */,
+			);
+			path = BLELightTests;
+			sourceTree = "<group>";
+		};
+		BB88F70C2704B5F100E1072A /* BLELightUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BB88F70D2704B5F100E1072A /* BLELightUITests.m */,
+				BB88F70F2704B5F100E1072A /* Info.plist */,
+			);
+			path = BLELightUITests;
+			sourceTree = "<group>";
+		};
+		BB88F72C2704FAF100E1072A /* KZColorPicker */ = {
+			isa = PBXGroup;
+			children = (
+				BB88F72D2704FAF100E1072A /* colorPickerKnob.png */,
+				BB88F72E2704FAF100E1072A /* KZColorPicker.h */,
+				BB88F72F2704FAF100E1072A /* KZColorCompareView.h */,
+				BB88F7302704FAF100E1072A /* HSV.c */,
+				BB88F7312704FAF100E1072A /* UIColor-Expanded.h */,
+				BB88F7322704FAF100E1072A /* colorPickerKnob@2x.png */,
+				BB88F7332704FAF100E1072A /* KZColorPickerHSWheel.h */,
+				BB88F7342704FAF100E1072A /* checkerboard@2x.png */,
+				BB88F7352704FAF100E1072A /* KZColorCompareView.m */,
+				BB88F7362704FAF100E1072A /* checkerboard.png */,
+				BB88F7372704FAF100E1072A /* KZColorPicker.m */,
+				BB88F7382704FAF100E1072A /* UIColor-Expanded.m */,
+				BB88F7392704FAF100E1072A /* HSV.h */,
+				BB88F73A2704FAF100E1072A /* KZColorPickerHSWheel.m */,
+			);
+			path = KZColorPicker;
+			sourceTree = "<group>";
+		};
+		BB88F7442704FB0700E1072A /* ASValueTrackingSlider */ = {
+			isa = PBXGroup;
+			children = (
+				BB88F7EF2706A62E00E1072A /* YXCMusicView.h */,
+				BB88F7EE2706A62E00E1072A /* YXCMusicView.m */,
+				BB88F7F02706A62E00E1072A /* YXCMusicView.xib */,
+				BB88F7452704FB0700E1072A /* ASValuePopUpView.h */,
+				BB88F7462704FB0700E1072A /* ASValueTrackingSlider.h */,
+				BB88F7472704FB0700E1072A /* ASValuePopUpView.m */,
+				BB88F7572704FB0700E1072A /* ASValueTrackingSlider.m */,
+			);
+			path = ASValueTrackingSlider;
+			sourceTree = "<group>";
+		};
+		BB88F7632704FF9200E1072A /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				BB88F7642704FF9200E1072A /* btn_list_down.png */,
+				BB88F7652704FF9200E1072A /* btn_list_nor.png */,
+				BB88F7662704FF9200E1072A /* btn_next_nor.png */,
+				BB88F7672704FF9200E1072A /* btn_off.png */,
+				BB88F7682704FF9200E1072A /* btn_state_pause_nor.png */,
+				BB88F7692704FF9200E1072A /* btn_setting_nor.png */,
+				BB88F76A2704FF9200E1072A /* arrow_close.png */,
+				BB88F76B2704FF9200E1072A /* btn_play_nor.png */,
+				BB88F76C2704FF9200E1072A /* btn_pause_nor.png */,
+				BB88F76D2704FF9200E1072A /* img_sleep.png */,
+				BB88F76E2704FF9200E1072A /* btn_loop_random_nor.png */,
+				BB88F76F2704FF9200E1072A /* btn_next_down.png */,
+				BB88F7702704FF9200E1072A /* btn_more_nor.png */,
+				BB88F7712704FF9200E1072A /* btn_state_pause_down.png */,
+				BB88F7722704FF9200E1072A /* btn_play_down.png */,
+				BB88F7732704FF9200E1072A /* btn_state_play_down.png */,
+				BB88F7742704FF9200E1072A /* btn_on.png */,
+				BB88F7752704FF9200E1072A /* ic_brightness_nor.png */,
+				BB88F7762704FF9200E1072A /* arrow_open.png */,
+				BB88F7772704FF9200E1072A /* btn_loop_random_down.png */,
+				BB88F7782704FF9200E1072A /* btn_pre_nor.png */,
+				BB88F7792704FF9200E1072A /* btn_remind_down.png */,
+				BB88F77A2704FF9200E1072A /* title_bg_setting.png */,
+				BB88F77B2704FF9200E1072A /* btn_loop_single_down.png */,
+				BB88F77C2704FF9200E1072A /* btn_state_play_nor.png */,
+				BB88F77D2704FF9200E1072A /* btn_loop_all_nor.png */,
+				BB88F77E2704FF9200E1072A /* line_03.png */,
+				BB88F77F2704FF9200E1072A /* line_02.png */,
+				BB88F7802704FF9200E1072A /* dot_music.png */,
+				BB88F7812704FF9200E1072A /* line_01.png */,
+				BB88F7822704FF9200E1072A /* btn_remind_nor.png */,
+				BB88F7832704FF9200E1072A /* btn_loop_all_down.png */,
+				BB88F7842704FF9200E1072A /* btn_setting_down.png */,
+				BB88F7852704FF9200E1072A /* btn_more_down.png */,
+				BB88F7862704FF9200E1072A /* btn_pre_down.png */,
+				BB88F7872704FF9200E1072A /* title_bg_main.png */,
+				BB88F7882704FF9200E1072A /* btn_loop_single_nor.png */,
+				BB88F7892704FF9200E1072A /* btn_pause_down.png */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+		BB88F78A2704FF9200E1072A /* 图片素材 */ = {
+			isa = PBXGroup;
+			children = (
+				BB88F78B2704FF9200E1072A /* icon.png */,
+				BB88F78C2704FF9200E1072A /* process_thumb@2x.png */,
+				BB88F78D2704FF9200E1072A /* Only Girl - Rihanna.mp3 */,
+				BB88F78E2704FF9200E1072A /* Icon-120.png */,
+				BB88F78F2704FF9200E1072A /* RSSI_Meter_1_70@2x.png */,
+				BB88F7902704FF9200E1072A /* Icon-Small.png */,
+				BB88F7912704FF9200E1072A /* RSSI_Meter_DOT_70@2x.png */,
+				BB88F7922704FF9200E1072A /* player-progress-loading@2x.png */,
+				BB88F7932704FF9200E1072A /* player-progress-point-h@2x.png */,
+				BB88F7942704FF9200E1072A /* RSSI_Meter_1_70.png */,
+				BB88F7952704FF9200E1072A /* lampControlTI@2x.png */,
+				BB88F7962704FF9200E1072A /* beLightColorPicker@2x.png */,
+				BB88F7972704FF9200E1072A /* RSSI_Meter_3_70.png */,
+				BB88F7982704FF9200E1072A /* Icon-72.png */,
+				BB88F7992704FF9200E1072A /* RSSI_Meter_DOT_70.png */,
+				BB88F79A2704FF9200E1072A /* icon@2x.png */,
+				BB88F79B2704FF9200E1072A /* rccarknob.png */,
+				BB88F79C2704FF9200E1072A /* Icon-80.png */,
+				BB88F79D2704FF9200E1072A /* player-progress@2x.png */,
+				BB88F79E2704FF9200E1072A /* RSSI_Meter_3_70@2x.png */,
+				BB88F79F2704FF9200E1072A /* rccarknobSmall.png */,
+				BB88F7A02704FF9200E1072A /* player-progress-h@2x.png */,
+				BB88F7A12704FF9200E1072A /* player-progress-point@2x.png */,
+				BB88F7A22704FF9200E1072A /* Icon-Small-50.png */,
+				BB88F7A32704FF9200E1072A /* pickerColorWheel@2x.png */,
+				BB88F7A42704FF9200E1072A /* lamp@2x.png */,
+				BB88F7A52704FF9200E1072A /* Icon-Small@2x.png */,
+				BB88F7A62704FF9200E1072A /* RSSI_Meter_2_70@2x.png */,
+				BB88F7A72704FF9200E1072A /* RSSI_Meter_2_70.png */,
+			);
+			path = "图片素材";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB88F6E22704B5EF00E1072A /* BLELight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB88F7122704B5F100E1072A /* Build configuration list for PBXNativeTarget "BLELight" */;
+			buildPhases = (
+				BB88F6DF2704B5EF00E1072A /* Sources */,
+				BB88F6E02704B5EF00E1072A /* Frameworks */,
+				BB88F6E12704B5EF00E1072A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BLELight;
+			productName = BLELight;
+			productReference = BB88F6E32704B5EF00E1072A /* BLELight.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB88F6FD2704B5F100E1072A /* BLELightTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB88F7152704B5F100E1072A /* Build configuration list for PBXNativeTarget "BLELightTests" */;
+			buildPhases = (
+				BB88F6FA2704B5F100E1072A /* Sources */,
+				BB88F6FB2704B5F100E1072A /* Frameworks */,
+				BB88F6FC2704B5F100E1072A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB88F7002704B5F100E1072A /* PBXTargetDependency */,
+			);
+			name = BLELightTests;
+			productName = BLELightTests;
+			productReference = BB88F6FE2704B5F100E1072A /* BLELightTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BB88F7082704B5F100E1072A /* BLELightUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB88F7182704B5F100E1072A /* Build configuration list for PBXNativeTarget "BLELightUITests" */;
+			buildPhases = (
+				BB88F7052704B5F100E1072A /* Sources */,
+				BB88F7062704B5F100E1072A /* Frameworks */,
+				BB88F7072704B5F100E1072A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB88F70B2704B5F100E1072A /* PBXTargetDependency */,
+			);
+			name = BLELightUITests;
+			productName = BLELightUITests;
+			productReference = BB88F7092704B5F100E1072A /* BLELightUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB88F6DB2704B5EF00E1072A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					BB88F6E22704B5EF00E1072A = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					BB88F6FD2704B5F100E1072A = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = BB88F6E22704B5EF00E1072A;
+					};
+					BB88F7082704B5F100E1072A = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = BB88F6E22704B5EF00E1072A;
+					};
+				};
+			};
+			buildConfigurationList = BB88F6DE2704B5EF00E1072A /* Build configuration list for PBXProject "BLELight" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB88F6DA2704B5EF00E1072A;
+			productRefGroup = BB88F6E42704B5EF00E1072A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB88F6E22704B5EF00E1072A /* BLELight */,
+				BB88F6FD2704B5F100E1072A /* BLELightTests */,
+				BB88F7082704B5F100E1072A /* BLELightUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB88F6E12704B5EF00E1072A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB88F7AF2704FF9200E1072A /* btn_play_nor.png in Resources */,
+				BB88F73D2704FAF100E1072A /* colorPickerKnob@2x.png in Resources */,
+				BB88F7D52704FF9200E1072A /* player-progress-loading@2x.png in Resources */,
+				BB88F7CA2704FF9200E1072A /* btn_pre_down.png in Resources */,
+				BB88F7BD2704FF9200E1072A /* btn_remind_down.png in Resources */,
+				BB88F7BC2704FF9200E1072A /* btn_pre_nor.png in Resources */,
+				BB88F7C12704FF9200E1072A /* btn_loop_all_nor.png in Resources */,
+				BB88F7DD2704FF9200E1072A /* icon@2x.png in Resources */,
+				BB88F7E72704FF9200E1072A /* lamp@2x.png in Resources */,
+				BB88F7D22704FF9200E1072A /* RSSI_Meter_1_70@2x.png in Resources */,
+				BB88F7B62704FF9200E1072A /* btn_play_down.png in Resources */,
+				BB88F7C22704FF9200E1072A /* line_03.png in Resources */,
+				BB88F7CB2704FF9200E1072A /* title_bg_main.png in Resources */,
+				BB88F7B12704FF9200E1072A /* img_sleep.png in Resources */,
+				BB88F7BB2704FF9200E1072A /* btn_loop_random_down.png in Resources */,
+				BB88F7F22706A62E00E1072A /* YXCMusicView.xib in Resources */,
+				BB88F7AA2704FF9200E1072A /* btn_next_nor.png in Resources */,
+				BB88F7CF2704FF9200E1072A /* process_thumb@2x.png in Resources */,
+				BB88F7B02704FF9200E1072A /* btn_pause_nor.png in Resources */,
+				BB88F7D12704FF9200E1072A /* Icon-120.png in Resources */,
+				BB88F7DC2704FF9200E1072A /* RSSI_Meter_DOT_70.png in Resources */,
+				BB88F7D82704FF9200E1072A /* lampControlTI@2x.png in Resources */,
+				BB88F7E82704FF9200E1072A /* Icon-Small@2x.png in Resources */,
+				BB88F7C42704FF9200E1072A /* dot_music.png in Resources */,
+				BB88F7E22704FF9200E1072A /* rccarknobSmall.png in Resources */,
+				BB88F7DA2704FF9200E1072A /* RSSI_Meter_3_70.png in Resources */,
+				BB88F7B92704FF9200E1072A /* ic_brightness_nor.png in Resources */,
+				BB88F6F62704B5F100E1072A /* LaunchScreen.storyboard in Resources */,
+				BB88F7AD2704FF9200E1072A /* btn_setting_nor.png in Resources */,
+				BB88F7BE2704FF9200E1072A /* title_bg_setting.png in Resources */,
+				BB88F7A82704FF9200E1072A /* btn_list_down.png in Resources */,
+				BB88F73B2704FAF100E1072A /* colorPickerKnob.png in Resources */,
+				BB88F7C52704FF9200E1072A /* line_01.png in Resources */,
+				BB88F7D72704FF9200E1072A /* RSSI_Meter_1_70.png in Resources */,
+				BB88F7D92704FF9200E1072A /* beLightColorPicker@2x.png in Resources */,
+				BB88F7BF2704FF9200E1072A /* btn_loop_single_down.png in Resources */,
+				BB88F7C02704FF9200E1072A /* btn_state_play_nor.png in Resources */,
+				BB88F7C62704FF9200E1072A /* btn_remind_nor.png in Resources */,
+				BB88F7E02704FF9200E1072A /* player-progress@2x.png in Resources */,
+				BB88F7AB2704FF9200E1072A /* btn_off.png in Resources */,
+				BB88F7C82704FF9200E1072A /* btn_setting_down.png in Resources */,
+				BB88F7A92704FF9200E1072A /* btn_list_nor.png in Resources */,
+				BB88F7BA2704FF9200E1072A /* arrow_open.png in Resources */,
+				BB88F7C92704FF9200E1072A /* btn_more_down.png in Resources */,
+				BB88F7B42704FF9200E1072A /* btn_more_nor.png in Resources */,
+				BB88F7CC2704FF9200E1072A /* btn_loop_single_nor.png in Resources */,
+				BB88F7DE2704FF9200E1072A /* rccarknob.png in Resources */,
+				BB88F7B32704FF9200E1072A /* btn_next_down.png in Resources */,
+				BB88F7B52704FF9200E1072A /* btn_state_pause_down.png in Resources */,
+				BB88F7DB2704FF9200E1072A /* Icon-72.png in Resources */,
+				BB88F7C32704FF9200E1072A /* line_02.png in Resources */,
+				BB88F7E52704FF9200E1072A /* Icon-Small-50.png in Resources */,
+				BB88F7D62704FF9200E1072A /* player-progress-point-h@2x.png in Resources */,
+				BB88F7D02704FF9200E1072A /* Only Girl - Rihanna.mp3 in Resources */,
+				BB88F7AE2704FF9200E1072A /* arrow_close.png in Resources */,
+				BB88F7B72704FF9200E1072A /* btn_state_play_down.png in Resources */,
+				BB88F7CE2704FF9200E1072A /* icon.png in Resources */,
+				BB88F6F32704B5F100E1072A /* Assets.xcassets in Resources */,
+				BB88F7D42704FF9200E1072A /* RSSI_Meter_DOT_70@2x.png in Resources */,
+				BB88F7CD2704FF9200E1072A /* btn_pause_down.png in Resources */,
+				BB88F7E12704FF9200E1072A /* RSSI_Meter_3_70@2x.png in Resources */,
+				BB88F7B22704FF9200E1072A /* btn_loop_random_nor.png in Resources */,
+				BB88F7D32704FF9200E1072A /* Icon-Small.png in Resources */,
+				BB88F7DF2704FF9200E1072A /* Icon-80.png in Resources */,
+				BB88F6F12704B5EF00E1072A /* Main.storyboard in Resources */,
+				BB88F7C72704FF9200E1072A /* btn_loop_all_down.png in Resources */,
+				BB88F7E92704FF9200E1072A /* RSSI_Meter_2_70@2x.png in Resources */,
+				BB88F7EA2704FF9200E1072A /* RSSI_Meter_2_70.png in Resources */,
+				BB88F7AC2704FF9200E1072A /* btn_state_pause_nor.png in Resources */,
+				BB88F7E42704FF9200E1072A /* player-progress-point@2x.png in Resources */,
+				BB88F7B82704FF9200E1072A /* btn_on.png in Resources */,
+				BB88F7402704FAF100E1072A /* checkerboard.png in Resources */,
+				BB88F73E2704FAF100E1072A /* checkerboard@2x.png in Resources */,
+				BB88F7E62704FF9200E1072A /* pickerColorWheel@2x.png in Resources */,
+				BB88F7E32704FF9200E1072A /* player-progress-h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB88F6FC2704B5F100E1072A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB88F7072704B5F100E1072A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB88F6DF2704B5EF00E1072A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB88F6E82704B5EF00E1072A /* AppDelegate.m in Sources */,
+				BB88F7262704D44E00E1072A /* LightViewController.m in Sources */,
+				BB88F6F92704B5F100E1072A /* main.m in Sources */,
+				BB88F7622704FB0700E1072A /* ASValueTrackingSlider.m in Sources */,
+				BB88F7202704D35800E1072A /* SearchViewController.m in Sources */,
+				BB88F7F12706A62E00E1072A /* YXCMusicView.m in Sources */,
+				BB88F73C2704FAF100E1072A /* HSV.c in Sources */,
+				BB88F7582704FB0700E1072A /* ASValuePopUpView.m in Sources */,
+				BB88F73F2704FAF100E1072A /* KZColorCompareView.m in Sources */,
+				BB88F7422704FAF100E1072A /* UIColor-Expanded.m in Sources */,
+				BB88F7412704FAF100E1072A /* KZColorPicker.m in Sources */,
+				BB88F7292704E2DB00E1072A /* SearchViewCell.m in Sources */,
+				BB88F6EB2704B5EF00E1072A /* SceneDelegate.m in Sources */,
+				BB88F7432704FAF100E1072A /* KZColorPickerHSWheel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB88F6FA2704B5F100E1072A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB88F7032704B5F100E1072A /* BLELightTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB88F7052704B5F100E1072A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB88F70E2704B5F100E1072A /* BLELightUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB88F7002704B5F100E1072A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB88F6E22704B5EF00E1072A /* BLELight */;
+			targetProxy = BB88F6FF2704B5F100E1072A /* PBXContainerItemProxy */;
+		};
+		BB88F70B2704B5F100E1072A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB88F6E22704B5EF00E1072A /* BLELight */;
+			targetProxy = BB88F70A2704B5F100E1072A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BB88F6EF2704B5EF00E1072A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB88F6F02704B5EF00E1072A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BB88F6F42704B5F100E1072A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB88F6F52704B5F100E1072A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB88F7102704B5F100E1072A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BB88F7112704B5F100E1072A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB88F7132704B5F100E1072A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W3RGGYNV99;
+				INFOPLIST_FILE = BLELight/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiaochuan.yao.BLELight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BB88F7142704B5F100E1072A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W3RGGYNV99;
+				INFOPLIST_FILE = BLELight/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiaochuan.yao.BLELight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BB88F7162704B5F100E1072A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W3RGGYNV99;
+				INFOPLIST_FILE = BLELightTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiaochuan.yao.BLELightTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BLELight.app/BLELight";
+			};
+			name = Debug;
+		};
+		BB88F7172704B5F100E1072A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W3RGGYNV99;
+				INFOPLIST_FILE = BLELightTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiaochuan.yao.BLELightTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BLELight.app/BLELight";
+			};
+			name = Release;
+		};
+		BB88F7192704B5F100E1072A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W3RGGYNV99;
+				INFOPLIST_FILE = BLELightUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiaochuan.yao.BLELightUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BLELight;
+			};
+			name = Debug;
+		};
+		BB88F71A2704B5F100E1072A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W3RGGYNV99;
+				INFOPLIST_FILE = BLELightUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiaochuan.yao.BLELightUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BLELight;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB88F6DE2704B5EF00E1072A /* Build configuration list for PBXProject "BLELight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB88F7102704B5F100E1072A /* Debug */,
+				BB88F7112704B5F100E1072A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB88F7122704B5F100E1072A /* Build configuration list for PBXNativeTarget "BLELight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB88F7132704B5F100E1072A /* Debug */,
+				BB88F7142704B5F100E1072A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB88F7152704B5F100E1072A /* Build configuration list for PBXNativeTarget "BLELightTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB88F7162704B5F100E1072A /* Debug */,
+				BB88F7172704B5F100E1072A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB88F7182704B5F100E1072A /* Build configuration list for PBXNativeTarget "BLELightUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB88F7192704B5F100E1072A /* Debug */,
+				BB88F71A2704B5F100E1072A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB88F6DB2704B5EF00E1072A /* Project object */;
+}
